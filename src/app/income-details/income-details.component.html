@@ -3,8 +3,16 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     </head>
     <body>
-        <p>property details</p>
         <form name="income-details" *ngIf="check">
+            <div class="container">
+                <h2 style="color: white;">Basic Progress Bar</h2>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width:0%;background-color:rgb(109, 238, 152);">
+                        <strong>0%</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="cont">
         <table class="center">
             <tr>
                 <td>Property Location:</td>
@@ -26,6 +34,8 @@
                 </td>
             </tr>
         </table>
+        <img [src]="myImage" class="setimg" width="360" height="600" class="rounded float-start" alt="...">
+    </div>
         </form>
         <router-outlet></router-outlet>
     </body>
